@@ -8,16 +8,37 @@
 
 /* Begin PBXBuildFile section */
 		7EA8B68F2235015E002D373C /* ZoomMe.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EA8B68D2235015E002D373C /* ZoomMe.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EA8B69C223501E8002D373C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA8B69B223501E8002D373C /* AppDelegate.swift */; };
+		7EA8B69E223501E8002D373C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA8B69D223501E8002D373C /* ViewController.swift */; };
+		7EA8B6A1223501E8002D373C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EA8B69F223501E8002D373C /* Main.storyboard */; };
+		7EA8B6A3223501E9002D373C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EA8B6A2223501E9002D373C /* Assets.xcassets */; };
+		7EA8B6A6223501E9002D373C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EA8B6A4223501E9002D373C /* LaunchScreen.storyboard */; };
+		7EA8B6AC22350395002D373C /* ZoomMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA8B6AB22350395002D373C /* ZoomMe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7EA8B68A2235015E002D373C /* ZoomMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZoomMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EA8B68D2235015E002D373C /* ZoomMe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZoomMe.h; sourceTree = "<group>"; };
 		7EA8B68E2235015E002D373C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EA8B699223501E8002D373C /* ZoomMeExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZoomMeExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EA8B69B223501E8002D373C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7EA8B69D223501E8002D373C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7EA8B6A0223501E8002D373C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7EA8B6A2223501E9002D373C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7EA8B6A5223501E9002D373C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7EA8B6A7223501E9002D373C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EA8B6AB22350395002D373C /* ZoomMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomMe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		7EA8B6872235015E002D373C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EA8B696223501E8002D373C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -31,6 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				7EA8B68C2235015E002D373C /* ZoomMe */,
+				7EA8B69A223501E8002D373C /* ZoomMeExample */,
 				7EA8B68B2235015E002D373C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -39,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				7EA8B68A2235015E002D373C /* ZoomMe.framework */,
+				7EA8B699223501E8002D373C /* ZoomMeExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,8 +71,22 @@
 			children = (
 				7EA8B68D2235015E002D373C /* ZoomMe.h */,
 				7EA8B68E2235015E002D373C /* Info.plist */,
+				7EA8B6AB22350395002D373C /* ZoomMe.swift */,
 			);
 			path = ZoomMe;
+			sourceTree = "<group>";
+		};
+		7EA8B69A223501E8002D373C /* ZoomMeExample */ = {
+			isa = PBXGroup;
+			children = (
+				7EA8B69B223501E8002D373C /* AppDelegate.swift */,
+				7EA8B69D223501E8002D373C /* ViewController.swift */,
+				7EA8B69F223501E8002D373C /* Main.storyboard */,
+				7EA8B6A2223501E9002D373C /* Assets.xcassets */,
+				7EA8B6A4223501E9002D373C /* LaunchScreen.storyboard */,
+				7EA8B6A7223501E9002D373C /* Info.plist */,
+			);
+			path = ZoomMeExample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,16 +121,38 @@
 			productReference = 7EA8B68A2235015E002D373C /* ZoomMe.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		7EA8B698223501E8002D373C /* ZoomMeExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EA8B6A8223501E9002D373C /* Build configuration list for PBXNativeTarget "ZoomMeExample" */;
+			buildPhases = (
+				7EA8B695223501E8002D373C /* Sources */,
+				7EA8B696223501E8002D373C /* Frameworks */,
+				7EA8B697223501E8002D373C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZoomMeExample;
+			productName = ZoomMeExample;
+			productReference = 7EA8B699223501E8002D373C /* ZoomMeExample.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		7EA8B6812235015E002D373C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Sherif  Wagih";
 				TargetAttributes = {
 					7EA8B6892235015E002D373C = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					7EA8B698223501E8002D373C = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
@@ -104,6 +163,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 7EA8B6802235015E002D373C;
 			productRefGroup = 7EA8B68B2235015E002D373C /* Products */;
@@ -111,6 +171,7 @@
 			projectRoot = "";
 			targets = (
 				7EA8B6892235015E002D373C /* ZoomMe */,
+				7EA8B698223501E8002D373C /* ZoomMeExample */,
 			);
 		};
 /* End PBXProject section */
@@ -123,6 +184,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7EA8B697223501E8002D373C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EA8B6A6223501E9002D373C /* LaunchScreen.storyboard in Resources */,
+				7EA8B6A3223501E9002D373C /* Assets.xcassets in Resources */,
+				7EA8B6A1223501E8002D373C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -130,10 +201,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EA8B6AC22350395002D373C /* ZoomMe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EA8B695223501E8002D373C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EA8B69E223501E8002D373C /* ViewController.swift in Sources */,
+				7EA8B69C223501E8002D373C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7EA8B69F223501E8002D373C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EA8B6A0223501E8002D373C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7EA8B6A4223501E9002D373C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EA8B6A5223501E9002D373C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		7EA8B6902235015E002D373C /* Debug */ = {
@@ -261,6 +361,7 @@
 		7EA8B6932235015E002D373C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -278,6 +379,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sherifzekry.ZoomMe;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +388,7 @@
 		7EA8B6942235015E002D373C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -308,6 +411,42 @@
 			};
 			name = Release;
 		};
+		7EA8B6A9223501E9002D373C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GUS473JQDG;
+				INFOPLIST_FILE = ZoomMeExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sherifzekry.ZoomMeExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7EA8B6AA223501E9002D373C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GUS473JQDG;
+				INFOPLIST_FILE = ZoomMeExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sherifzekry.ZoomMeExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -325,6 +464,15 @@
 			buildConfigurations = (
 				7EA8B6932235015E002D373C /* Debug */,
 				7EA8B6942235015E002D373C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EA8B6A8223501E9002D373C /* Build configuration list for PBXNativeTarget "ZoomMeExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EA8B6A9223501E9002D373C /* Debug */,
+				7EA8B6AA223501E9002D373C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
