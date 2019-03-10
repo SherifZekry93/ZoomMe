@@ -25,6 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
+This CocoaPods library helps you zoom into any imageview you want.
                    DESC
 
   s.homepage     = "https://github.com/prosherifzekr/ZoomMe"
@@ -77,9 +78,8 @@ Pod::Spec.new do |s|
   #  Specify the location from where the source should be retrieved.
   #  Supports git, hg, bzr, svn and HTTP.
   #
-
-  s.source       = { :git => "https://github.com/prosherifzekr/ZoomMe", :tag => "#{s.version}" }
-
+  s.swift_version = "4.2"
+  s.source       = { :git => "https://github.com/prosherifzekr/ZoomMe.git", :tag => "#{s.version}" }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -89,7 +89,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "SwiftyLib/**/*.{h,m,swift}"
+  s.source_files  = "ZoomMe/**/*.{h,m,swift}"
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
